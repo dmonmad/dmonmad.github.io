@@ -33,7 +33,7 @@ a {
 
 #particles-js {
     height: 100%;
-    width: 100vw;
+    width: 100%;
     position: absolute;
 }
 
@@ -56,7 +56,11 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    width: 140vw;
+    width: 100%;
+}
+
+nav ul a {
+    width: 25%;
 }
 
 nav li {
@@ -65,7 +69,7 @@ nav li {
     display: inline-block;
     height: 50px;
     line-height: 50px;
-    width: 25vw;
+    width: 100%;
     text-align: center;
     color: white;
     cursor: pointer;
@@ -102,7 +106,7 @@ section .title {
     align-self: center;
     margin: 0 auto;
     overflow: hidden;
-    padding-bottom: 30px;
+    min-height: 20%;
 }
 
 section .title span {
@@ -116,21 +120,22 @@ section .title span {
     letter-spacing: 0.25vw;
 }
 
+
 section .title span.name {
     animation: byLeft 1s ease both;
 }
 
 section .title span.job {
-    font-size: 2.5rem;
-    animation: byRight 1s ease both; 
+    animation: byRight 1s ease both;
     letter-spacing: 0.44vw;
     font-weight: 20;
+    font-size: 2.2vw;
 }
 
 
 
 section .title span.skills {
-    line-height:2.5rem;
+    line-height: 2.5rem;
     font-size: 1.5rem;
     animation: byBottom 1s ease both;
 }
