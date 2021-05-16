@@ -17,13 +17,58 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-    background: #0f2027;
+    background: #8360c3;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+    background: -webkit-linear-gradient(0deg, rgb(190, 25, 162), rgb(35, 149, 177), rgb(190, 99, 25));
+    background: linear-gradient(0deg, rgb(190, 25, 162), rgb(35, 149, 177), rgb(190, 99, 25));
+    background-size: 600% 600%;
+
+    -webkit-animation: gradient 20s ease-in-out infinite;
+    -moz-animation: gradient 20s ease-in-out infinite;
+    animation: gradient 20s ease-in-out infinite;
+}
+
+@-webkit-keyframes gradient {
+    0% {
+        background-position: 24% 0%
+    }
+
+    50% {
+        background-position: 77% 100%
+    }
+
+    100% {
+        background-position: 24% 0%
+    }
+}
+
+@-moz-keyframes gradient {
+    0% {
+        background-position: 24% 0%
+    }
+
+    50% {
+        background-position: 77% 100%
+    }
+
+    100% {
+        background-position: 24% 0%
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 24% 0%
+    }
+
+    50% {
+        background-position: 77% 100%
+    }
+
+    100% {
+        background-position: 24% 0%
+    }
 }
 
 a {
@@ -99,6 +144,11 @@ section {
     height: 100vh;
 }
 
+section#mywork {
+
+    justify-content: center;
+}
+
 section .title {
     text-align: center;
     max-width: 70%;
@@ -132,8 +182,6 @@ section .title span.job {
     font-size: 2.2vw;
 }
 
-
-
 section .title span.skills {
     line-height: 2.5rem;
     font-size: 1.5rem;
@@ -142,7 +190,7 @@ section .title span.skills {
 
 .card-container {
     display: flex;
-    width: 100%;
+    width: 90%;
     gap: 1vh;
 }
 
