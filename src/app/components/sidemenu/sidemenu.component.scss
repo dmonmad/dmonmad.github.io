@@ -1,0 +1,66 @@
+.container {
+  width: 2vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  gap: 16px;
+  .icon-wrapper {
+    ion-icon {
+      font-size: 8px;
+      color: rgb(40, 40, 40);
+    }
+  }
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container:hover {
+  width: auto;
+
+  .icon-wrapper {
+    height: 50px;
+    width: 50px;
+    margin: 4px;
+
+    ion-icon {
+      font-size: 2rem;
+      color: rgb(240, 240, 240);
+    }
+  }
+}
+
+.description {
+  font-size: 1rem;
+  position: absolute;
+  left: 64px;
+  opacity: 0;
+  /* width: max-content; */
+  white-space: nowrap;
+  padding: 8px;
+}
+
+.icon-wrapper:hover {
+  .description {
+    opacity: 1;
+  }
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.container.glass {
+    border-radius: 0px;
+}

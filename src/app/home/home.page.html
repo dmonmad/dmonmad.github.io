@@ -1,0 +1,23 @@
+<ion-content
+  class="moving-background content"
+  [class]="'background-'+selectedBackground"
+>
+  <div *ngIf="selectedBackground == 4" class="area">
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <app-sidemenu></app-sidemenu>
+  <div class="container">
+    <section></section>
+  </div>
+</ion-content>

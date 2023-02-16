@@ -1,0 +1,7 @@
+{
+  "name": "dmonmad",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
