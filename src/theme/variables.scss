@@ -3,9 +3,9 @@
 
 /** Ionic CSS Variables **/
 :root {
-  * {
-    transition: all 0.2s ease-out;
-  }
+  // * {
+  //   transition: all 0.2s ease-out;
+  // }
 
   /** primary **/
   --ion-color-primary: #3880ff;
@@ -79,55 +79,7 @@
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
 
-  @-webkit-keyframes moving-bg-anim {
-    0% {
-      background-position: 0% 17%;
-    }
-    50% {
-      background-position: 100% 84%;
-    }
-    100% {
-      background-position: 0% 17%;
-    }
-  }
-  @-moz-keyframes moving-bg-anim {
-    0% {
-      background-position: 0% 17%;
-    }
-    50% {
-      background-position: 100% 84%;
-    }
-    100% {
-      background-position: 0% 17%;
-    }
-  }
-  @keyframes moving-bg-anim {
-    0% {
-      background-position: 0% 17%;
-    }
-    50% {
-      background-position: 100% 84%;
-    }
-    100% {
-      background-position: 0% 17%;
-    }
-  }
-
-  @keyframes up-translating {
-
-    0%{
-        transform: translateY(0) rotate(0deg);
-        opacity: 1;
-        border-radius: 0;
-    }
-
-    100%{
-        transform: translateY(-1000px) rotate(720deg);
-        opacity: 0;
-        border-radius: 50%;
-    }
-
-}
+  
 }
 
 // @media (prefers-color-scheme: dark) {
