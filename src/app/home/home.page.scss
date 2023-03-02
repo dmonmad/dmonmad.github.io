@@ -1,70 +1,92 @@
-.section {
+section {
   height: 100vh;
   width: 100%;
 }
 
-#about-me {
-  display: flex;
+header {
+  position: fixed;
+  width: 100%;
+  padding: 12px 0px;
+  top: 0px;
+
+  nav {
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-evenly;
+
+      padding: 0;
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .progress-container {
+    width: 100%;
+    height: 8px;
+
+    .progress-bar {
+      height: 8px;
+      background-color: white;
+      width: 30%;
+      position: absolute;
+      // left: 50%;
+      transform: translate(-50%, 0px);
+    }
+  }
 }
 
-#experience {
+#about-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1,
+  h2 {
+    color: white;
+  }
+
+  h1 {
+    font-weight: 900;
+  }
+
+  .content {
+    padding: 0px 16px;
+  }
+}
+
+#my-skills {
 }
 
 #my-work {
 }
 
-.background-1 {
-  --background: linear-gradient(338deg, #e43333, #d49b4b, #d4584b);
-  background-size: 600% 600%;
-
-  -webkit-animation: moving-bg-anim 5s ease infinite;
-  -moz-animation: moving-bg-anim 5s ease infinite;
-  animation: moving-bg-anim 5s ease infinite;
-}
-
-.background-2 {
-  --background: linear-gradient(338deg, #33b4e4, #4bc7d4, #4b7ed4);
-  background-size: 600% 600%;
-
-  -webkit-animation: moving-bg-anim 5s ease infinite;
-  -moz-animation: moving-bg-anim 5s ease infinite;
-  animation: moving-bg-anim 5s ease infinite;
-}
-
-.background-3 {
-  --background: linear-gradient(336deg, #b3dd4b, #39e630, #0ec566);
-  background-size: 600% 600%;
-
-  -webkit-animation: moving-bg-anim 5s ease infinite;
-  -moz-animation: moving-bg-anim 5s ease infinite;
-  animation: moving-bg-anim 5s ease infinite;
-}
-
-.background-4 {
-  --background: linear-gradient(336deg, #b3dd4b, #39e630, #0ec566);
-}
-
-.moving-background {
-}
-
 .area {
-  background: #4e54c8;
-  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+  background: #1c1c1c;
+  background: -webkit-linear-gradient(to left, #1c1c1c, #222222);
   width: 100%;
   height: 100vh;
-}
-
-.circles {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -999;
+}
+
+.blur {
+  z-index: -998;
+  backdrop-filter: blur(7px);
+  background-color: transparent;
+}
+
+.circles {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
 
 .circles li {
-  z-index: 9;
   position: absolute;
   display: block;
   list-style: none;
@@ -150,41 +172,7 @@
   animation-duration: 11s;
 }
 
-@-webkit-keyframes moving-bg-anim {
-  0% {
-    background-position: 0% 17%;
-  }
-  50% {
-    background-position: 100% 84%;
-  }
-  100% {
-    background-position: 0% 17%;
-  }
-}
-@-moz-keyframes moving-bg-anim {
-  0% {
-    background-position: 0% 17%;
-  }
-  50% {
-    background-position: 100% 84%;
-  }
-  100% {
-    background-position: 0% 17%;
-  }
-}
-@keyframes moving-bg-anim {
-  0% {
-    background-position: 0% 17%;
-  }
-  50% {
-    background-position: 100% 84%;
-  }
-  100% {
-    background-position: 0% 17%;
-  }
-}
-
-@keyframes up-translating {
+@keyframes animate {
   0% {
     transform: translateY(0) rotate(0deg);
     opacity: 1;
